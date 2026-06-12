@@ -1,0 +1,17 @@
+/* 1. Imports must always be first */
+@import "tailwindcss";
+/* 2. Tailwind directives come second */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Your custom layers come last */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased bg-[#0A0A0F] text-[#F0EEE9];
+    font-family: 'Inter', sans-serif;
+  }
+}
