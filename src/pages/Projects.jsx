@@ -338,28 +338,7 @@ export default function Projects() {
                       </h3>
                       <p className="text-sm text-slate-300 leading-relaxed">{cs.framework}</p>
                     </div>
-
-                    {/* Block 3: The Bottom-Line ROI */}
-                    <div>
-                      <h3 className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">
-                        <span className={`inline-block w-4 h-px bg-gradient-to-r ${cs.accent}`} />
-                        The Bottom-Line ROI
-                      </h3>
-                      <div className="rounded-xl border border-white/5 bg-white/[0.02] p-5">
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                          {cs.metrics.map((m) => (
-                            <div key={m.label} className="text-center">
-                              <p className={`font-display text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br ${cs.accent}`}>
-                                {m.value}
-                              </p>
-                              <p className="text-xs text-slate-500 mt-1">{m.label}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
                   </div>
-
                   {/* Right: Image evidence panel */}
                   <div className="lg:col-span-2">
                     <h3 className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">
