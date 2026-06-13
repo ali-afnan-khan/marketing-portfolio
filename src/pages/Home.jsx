@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const METRICS = [
-  { value: "3+", label: "Years Experience" },
+  { value: "3+", label: "Years Scaling Budgets" },
   { value: "$18,000+", label: "Ad Spend Managed" },
-  { value: "7.5×", label: "Average ROAS" },
+  { value: "7.5×", label: "Average Funnel ROAS" },
 ];
 
 const PILLARS = [
@@ -14,10 +14,10 @@ const PILLARS = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 20h18M3 4h18" />
       </svg>
     ),
-    title: "Data-Driven Media Buying",
-    subtitle: "Precision targeting & tracking infrastructure",
+    title: "Strategic Paid Media Buying",
+    subtitle: "High-Intent SEM & Converting Paid Social",
     description:
-      "Every dollar is deployed against validated audience signals. I build end-to-end tracking infrastructure so attribution is clean and every optimization decision is grounded in real conversion data — not guesswork.",
+      "I don’t rely on platform luck or generic templates. I engineer data-backed, multi-channel ad campaigns across Google Ads (SEM) and Meta Ads (SMM) built specifically to capture high-intent audiences and systematically convert passive scrollers into high-value buyers.",
     accent: "from-indigo-500 to-blue-500",
     glow: "group-hover:shadow-indigo-500/10",
   },
@@ -31,7 +31,7 @@ const PILLARS = [
     title: "Psychology-Backed Creative",
     subtitle: "High-converting copy & visual assets",
     description:
-      "Clicks are earned at the creative layer. I design ad copy and visuals around cognitive triggers — urgency, social proof, identity alignment — that move audiences from passive scrollers to active buyers.",
+      "Clicks are earned at the creative layer. I help design ad copy and visuals around cognitive triggers — urgency, social proof, identity alignment — that move audiences from passive scrollers to active buyers.",
     accent: "from-violet-500 to-purple-500",
     glow: "group-hover:shadow-violet-500/10",
   },
@@ -41,10 +41,10 @@ const PILLARS = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
       </svg>
     ),
-    title: "Capital Efficiency Optimization",
-    subtitle: "Eliminating ad-spend bleed & maximizing ROAS",
+    title: "Funnel Optimization & CRO",
+    subtitle: "Ecosystem Engineering & Friction Reduction",
     description:
-      "Wasted spend is a structural problem, not a budget problem. I audit funnel inefficiencies, isolate underperforming segments, and continuously reallocate budget toward the highest-yield acquisition paths.",
+      "Traffic is useless if your landing page leaks money. I audit your entire conversion ecosystem, providing high-level strategic direction and directing minute technical tweaks that eliminate funnel friction, boost conversion rates, and maximize average order value.",
     accent: "from-sky-500 to-indigo-500",
     glow: "group-hover:shadow-sky-500/10",
   },
@@ -74,17 +74,18 @@ export default function Home() {
 
           {/* Display heading */}
           <h1 className="font-['Syne'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-[#F0EEE9]">
-            I don't buy traffic.{" "}
+            I Don't Buy Traffic.{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-violet-400 to-indigo-400">
-              I engineer profitable
+              I Engineer Profitable
             </span>{" "}
-            acquisition engines.
+            Acquisition engines.
           </h1>
 
           {/* Sub-hook */}
           <p className="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            While standard marketing burns budgets chasing vanity metrics, I build
-            hyper-targeted, data-backed frameworks that turn calculated ad spend into{" "}
+            While standard marketing just burn budgets chasing empty clicks and dashboard vanity metrics. 
+            I Don't. As a technical marketer, I combine high-level strategy with deep infrastructure execution
+            —to turn every dollar of ad spend into profitable, predictable revenue.{" "}
             <span className="text-slate-200 font-medium">verifiable bottom-line revenue.</span>
           </p>
 
@@ -136,10 +137,10 @@ export default function Home() {
           {/* Section label */}
           <div className="text-center mb-16">
             <p className="text-xs font-medium tracking-widest text-indigo-400 uppercase mb-3">
-              The framework
+              The Framework
             </p>
             <h2 className="font-['Syne'] text-3xl sm:text-4xl font-bold text-[#F0EEE9]">
-              Three pillars. One outcome: growth.
+              Three pillars. One outcome: Growth.
             </h2>
           </div>
 

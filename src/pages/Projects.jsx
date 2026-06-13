@@ -17,6 +17,7 @@ const tourGoogleAfter = "/assets/private_tour_operator_google_ads_dashboard_befo
 const concertCRM      = "/assets/concert_ticket_sales_meta_ads_crm_dashboard_snapshot.jpg";
 const concertSpend     = "/assets/concert_ticket_sales_meta_ads_meta_dashboard_spend.jpg";
 
+const concertVideo     = "/assets/concert_case_study.mp4";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const CASE_STUDIES = [
@@ -25,7 +26,7 @@ const CASE_STUDIES = [
     index: "01",
     category: "E-Commerce · Meta Ads",
     title: "Private Label Apparel Brand",
-    subtitle: "From break-even target to 7.5× ROAS in 60 days",
+    subtitle: "From breaking even to 7.5× ROAS in 60 days",
     accent: "from-indigo-500 to-blue-500",
     accentSolid: "bg-indigo-500",
     metrics: [
@@ -35,20 +36,20 @@ const CASE_STUDIES = [
     ],
     brief: {
       context:
-        "A highly saturated apparel niche with compressed margins. The client's baseline ambition was simply to break even — any positive return would have been considered a win.",
+        "An apparel brand competing in a crowded market with razor-thin margins. The client’s only goal was to break even—any positive return would be a massive win.",
       obstacles: [
-        "Acute shortage of creative assets entering the campaign",
-        "High risk of rapid ad fatigue in a visually commoditised market",
-        "Narrow positioning window before competitor saturation",
+        "Severe shortage of ad creatives at launch",
+        "High risk of quick ad fatigue against copycat competitors",
+        "A narrow window to scale before market saturation",
       ],
     },
     framework:
-      "Implemented ABO (Ad Budget Optimization) campaigns structured around native creative formats and systematic format variation. Built the campaign architecture for rapid isolated variable testing, granular audience segmentation, and dynamic positioning pivots. Underperforming elements were continuously eliminated to stabilise front-end acquisition costs and protect margin.",
+      "Structured rapid budget testing to isolate winning ad creative styles instantly. Built an agile account framework to hyper-segment audiences and rotate hooks dynamically. We aggressively cut underperforming elements daily to protect profit margins and keep acquisition costs rock-bottom.",
     images: {
       layout: "grid-2",
       items: [
         { src: ecomDashboard, alt: "Meta Ads dashboard — campaign performance overview", label: "Meta Ads Dashboard" },
-        { src: ecomShopify,   alt: "Shopify revenue dashboard snapshot",                 label: "Shopify Revenue"   },
+        { src: ecomShopify,   alt: "Shopify revenue dashboard snapshot",             label: "Shopify Revenue"   },
       ],
     },
   },
@@ -56,27 +57,29 @@ const CASE_STUDIES = [
   {
     id: "tour-operator",
     index: "02",
-    category: "Lead Generation · Google Ads · Meta Ads",
+    category: "Lead Gen · Google & Meta Ads",
     title: "Direct Acquisition Engine for Tour Operator",
-    subtitle: "Recovered $60K/yr in OTA commissions via owned-channel direct bookings",
+    subtitle: "Recovered $60K/yr in middleman commissions by driving direct bookings",
     accent: "from-violet-500 to-purple-500",
     accentSolid: "bg-violet-500",
     metrics: [
       { value: "3.66×", label: "True ROAS (Google)" },
-      { value: "$38,856", label: "Total Blended Revenue" },
-      { value: "40–60%", label: "Revenue via Direct Bookings" },
+      { value: "~ $40K", label: "Total Blended Revenue (6 months)" },
+      { value: "30–50%", label: "Annual Revenue via Direct Bookings" },
     ],
     brief: {
       context:
-        "A $240K/yr tour operator haemorrhaging $60,000 annually to Viator's 25% OTA commissions. Prior to intervention, Meta and Google spend were generating a negative blended ROI with no reliable attribution in place.",
+        "A $240K tour operator losing $60,000 every year to OTA commissions (Viator). Their existing Meta and Google ad setups were losing money- 0 Conversions or No Strategy.",
       obstacles: [
-        "Broken tracking configurations — no reliable conversion data",
-        "Non-existent campaign account structures across both platforms",
-        "Inefficient broad-keyword spend bleeding budget with zero intent signal",
+        "Broken conversion tracking pipelines with almost zero data visibility",
+        "Disorganized ad accounts draining budget",
+        "Broad keywords catching low-intent traffic and wasting spend",
       ],
     },
     framework:
-      "Rebuilt data pipelines from the ground up and abandoned broad keywords entirely. Deployed an intent-driven PPC blueprint on Google Ads targeting pure high-converting exact intent for the Chichén Itzá Group Tour campaign. Meta Ads were used surgically early on to inject immediate liquidity ($3,000 revenue from $1,500 spend), then systematically discontinued once the Google funnel reached peak efficiency — concentrating 100% of spend where ROAS was proven.",
+      "Rebuilt the entire eco-system from scratch and killed broad keywords. Launched a sharp Google Ads search blueprint catching high-intent travelers looking for specific local tours. Used Meta Ads to inject instant cash flow early on, then shut them down once Google hit peak efficiency to focus 100% of the budget on the highest-converting funnel. Creating a blended revenue of $38K in just a span of 6 months",
+    
+      // Find this inside id: "concert-tickets" at the bottom of the object
     images: {
       layout: "before-after",
       items: [
@@ -93,7 +96,7 @@ const CASE_STUDIES = [
     index: "03",
     category: "Event Marketing · Meta Ads",
     title: "Orchestra Concert Ticket Sales",
-    subtitle: "15.7× ROAS — full inventory liquidated at 70% under projected budget",
+    subtitle: "15.7× ROAS — cleared all inventory at 70% under planned budget",
     accent: "from-sky-500 to-indigo-500",
     accentSolid: "bg-sky-500",
     metrics: [
@@ -103,20 +106,22 @@ const CASE_STUDIES = [
     ],
     brief: {
       context:
-        "A high-profile orchestra concert in the Philippines targeting a highly specific local demographic. Baseline goal: $3,200 revenue from an $800 budget (4.0× ROAS) within a strict 1-month window.",
+        "A high-profile orchestra concert needing to hit $3,200 in revenue from a strict $800 budget inside a fast, one-month deadline.",
       obstacles: [
-        "Significant funnel tracking deficits and unmapped conversion events",
-        "High-friction booking path causing measurable drop-offs",
-        "Niche audience requiring precision targeting to avoid wasted impressions",
+        "Major tracking deficits and hidden checkout drop-offs",
+        "High-friction booking process killing conversions",
+        "Niche local audience requiring extreme targeting precision",
       ],
     },
     framework:
-      "Audited the full user path and mapped every data touchpoint before launching spend. Segmented classical music enthusiasts and event-goers through deep audience profiling. Applied behavioral psychology principles to design highly personalised feed creatives. Deployed a proprietary 'Creative Targeting' methodology with advanced bidding strategies and strict placement exclusions — optimising market penetration without burning the budget.",
+      "Audited and patched the entire tracking setup before spending a dime. Profiled precise local event-goers and used psychological triggers to build personalized ad creatives. Deployed strict ad placement exclusions and a target bidding strategy to sweep the market without bleeding cash.",
     images: {
       layout: "grid-2",
       items: [
         { src: concertSpend, alt: "Meta Ads spend dashboard — concert campaign", label: "Meta Ads Spend" },
         { src: concertCRM,   alt: "CRM dashboard — ticket sales verified",       label: "CRM Verified Revenue" },
+        // Add this third object to the items array:
+        { src: concertVideo, alt: "Campaign walkthrough video",                  label: "Result Show-Case Video", isVideo: true }
       ],
     },
   },
@@ -191,7 +196,7 @@ function ImageGrid({ config }) {
     );
   }
 
-  // Default: grid-2
+// Default: grid-2
   return (
     <>
       <div className="grid grid-cols-2 gap-2">
@@ -199,15 +204,28 @@ function ImageGrid({ config }) {
           <button
             key={img.label}
             onClick={() => setLightbox(img)}
-            className="group relative rounded-lg overflow-hidden border border-white/5 hover:border-indigo-500/30 transition-colors cursor-zoom-in"
+            className="group relative rounded-lg overflow-hidden border border-white/5 bg-[#0A0A0F] h-40 w-full text-left cursor-zoom-in"
           >
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="w-full h-40 object-cover object-top group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/90 via-transparent to-transparent" />
-            <span className="absolute bottom-2 left-2 text-xs text-slate-300 font-medium">{img.label}</span>
+            {img.isVideo ? (
+              <div className="w-full h-full flex items-center justify-center overflow-hidden">
+                {/* Visual preview rotated 90 deg left (-rotate-90) */}
+                <video
+                  src={img.src}
+                  muted
+                  className="w-full h-full object-cover -rotate-90 scale-125 pointer-events-none"
+                />
+              </div>
+            ) : (
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/90 via-transparent to-transparent pointer-events-none" />
+            <span className="absolute bottom-2 left-2 text-xs text-slate-300 font-medium pointer-events-none">
+              {img.label}
+            </span>
           </button>
         ))}
       </div>
@@ -225,16 +243,28 @@ function Lightbox({ img, onClose }) {
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
       onClick={onClose}
     >
-      <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
-        <img
-          src={img.src}
-          alt={img.alt}
-          className="w-full rounded-xl border border-white/10 shadow-2xl"
-        />
-        <p className="mt-3 text-center text-sm text-slate-400">{img.label}</p>
+      <div className="relative max-w-xl w-full flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
+        {img.isVideo ? (
+          <div className="w-full aspect-[9/16] max-h-[75vh] flex items-center justify-center bg-black rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+            {/* Plays full size, rotated 90 degrees left */}
+            <video
+              src={img.src}
+              controls
+              autoPlay
+              className="w-full h-full object-contain -rotate-90"
+            />
+          </div>
+        ) : (
+          <img
+            src={img.src}
+            alt={img.alt}
+            className="w-full rounded-xl border border-white/10 shadow-2xl"
+          />
+        )}
+        <p className="mt-3 text-center text-sm text-slate-400 w-full">{img.label}</p>
         <button
           onClick={onClose}
-          className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-800 border border-white/10 text-slate-300 hover:text-white flex items-center justify-center text-lg leading-none"
+          className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-800 border border-white/10 text-slate-300 hover:text-white flex items-center justify-center text-lg leading-none z-[110]"
           aria-label="Close"
         >
           ×
