@@ -22,8 +22,43 @@ const concertVideo     = "/assets/concert_case_study.mp4";
 
 const CASE_STUDIES = [
   {
-    id: "ecom-apparel",
+    id: "tour-operator",
     index: "01",
+    category: "Tour Package Sales · Google & Meta Ads",
+    title: "Direct Acquisition Engine for Tour Operator",
+    subtitle: "Recovered $60K/yr in middleman commissions by driving direct bookings",
+    accent: "from-violet-500 to-purple-500",
+    accentSolid: "bg-violet-500",
+    metrics: [
+      { value: "3.66×", label: "True ROAS (Google)" },
+      { value: "~ $40K", label: "Total Blended Revenue (6 months)" },
+      { value: "30–50%", label: "Annual Revenue via Direct Bookings" },
+    ],
+    brief: {
+      context:
+        "A $240K tour operator losing $60,000 every year to OTA commissions (Viator). Their existing Meta and Google ad setups were losing money - 0 Conversions and No Strategy.",
+      obstacles: [
+        "Broken conversion tracking pipelines with almost zero data visibility",
+        "Disorganized ad accounts draining budget",
+        "Broad keywords catching low-intent traffic and wasting spend",
+      ],
+    },
+    framework:
+      "Rebuilt the entire eco-system from scratch and killed broad keywords. Launched a sharp Google Ads search blueprint catching high-intent travelers looking for specific local tours. Used Meta Ads to inject instant cash flow early on, then shut them down once Google hit peak efficiency to focus 100% of the budget on the highest-converting funnel. Creating a blended revenue of $38K in just a span of 6 months",
+    images: {
+      layout: "before-after",
+      items: [
+        { src: tourMetaBefore,  alt: "Meta Ads account — before restructure", label: "Meta · Before", tag: "Before" },
+        { src: tourMetaAfter,   alt: "Meta Ads account — after restructure",  label: "Meta · After",  tag: "After"  },
+        { src: tourGoogleAfter, alt: "Google Ads dashboard snapshot",         label: "Google Ads"    },
+        { src: tourCRM,         alt: "CRM verified revenue dashboard",        label: "CRM Revenue"   },
+      ],
+    },
+  },
+
+  {
+    id: "ecom-apparel",
+    index: "02",
     category: "E-Commerce · Meta Ads",
     title: "Private Label Apparel Brand",
     subtitle: "From breaking even to 7.5× ROAS in 60 days",
@@ -50,43 +85,6 @@ const CASE_STUDIES = [
       items: [
         { src: ecomDashboard, alt: "Meta Ads dashboard — campaign performance overview", label: "Meta Ads Dashboard" },
         { src: ecomShopify,   alt: "Shopify revenue dashboard snapshot",             label: "Shopify Revenue"   },
-      ],
-    },
-  },
-
-  {
-    id: "tour-operator",
-    index: "02",
-    category: "Lead Gen · Google & Meta Ads",
-    title: "Direct Acquisition Engine for Tour Operator",
-    subtitle: "Recovered $60K/yr in middleman commissions by driving direct bookings",
-    accent: "from-violet-500 to-purple-500",
-    accentSolid: "bg-violet-500",
-    metrics: [
-      { value: "3.66×", label: "True ROAS (Google)" },
-      { value: "~ $40K", label: "Total Blended Revenue (6 months)" },
-      { value: "30–50%", label: "Annual Revenue via Direct Bookings" },
-    ],
-    brief: {
-      context:
-        "A $240K tour operator losing $60,000 every year to OTA commissions (Viator). Their existing Meta and Google ad setups were losing money- 0 Conversions or No Strategy.",
-      obstacles: [
-        "Broken conversion tracking pipelines with almost zero data visibility",
-        "Disorganized ad accounts draining budget",
-        "Broad keywords catching low-intent traffic and wasting spend",
-      ],
-    },
-    framework:
-      "Rebuilt the entire eco-system from scratch and killed broad keywords. Launched a sharp Google Ads search blueprint catching high-intent travelers looking for specific local tours. Used Meta Ads to inject instant cash flow early on, then shut them down once Google hit peak efficiency to focus 100% of the budget on the highest-converting funnel. Creating a blended revenue of $38K in just a span of 6 months",
-    
-      // Find this inside id: "concert-tickets" at the bottom of the object
-    images: {
-      layout: "before-after",
-      items: [
-        { src: tourMetaBefore,  alt: "Meta Ads account — before restructure", label: "Meta · Before", tag: "Before" },
-        { src: tourMetaAfter,   alt: "Meta Ads account — after restructure",  label: "Meta · After",  tag: "After"  },
-        { src: tourGoogleAfter, alt: "Google Ads dashboard snapshot",         label: "Google Ads"    },
-        { src: tourCRM,         alt: "CRM verified revenue dashboard",        label: "CRM Revenue"   },
       ],
     },
   },
@@ -120,7 +118,6 @@ const CASE_STUDIES = [
       items: [
         { src: concertSpend, alt: "Meta Ads spend dashboard — concert campaign", label: "Meta Ads Spend" },
         { src: concertCRM,   alt: "CRM dashboard — ticket sales verified",       label: "CRM Verified Revenue" },
-        // Add this third object to the items array:
         { src: concertVideo, alt: "Campaign walkthrough video",                  label: "Result Show-Case Video", isVideo: true }
       ],
     },
@@ -132,7 +129,7 @@ const CASE_STUDIES = [
 function MetricPill({ value, label, accent }) {
   return (
     <div className="flex flex-col items-center gap-0.5 px-5 py-4 rounded-xl bg-white/[0.04] border border-white/5">
-      <span className={`font-display text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br ${accent}`}>
+      <span className={`font-display text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br ${accent}`}>
         {value}
       </span>
       <span className="text-xs text-slate-500 tracking-wide text-center">{label}</span>

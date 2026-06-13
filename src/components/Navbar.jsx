@@ -59,12 +59,12 @@ export default function Navbar() {
             Let's Talk 📬
           </a>
 
-          {/* Mobile CTA (Visible only on mobile, links directly to WhatsApp) */}
+          {/* Mobile CTA (Optimized for Visibility & Tap Targets) */}
           <a 
-            href="https://wa.me/923000000000?text=Hi%20Ali!%20I%20visited%20your%20portfolio%20and%20would%20love%20to%20chat%20about%20a%20project." 
+            href="https://wa.me/923339667163?text=Hi%20Ali!%20I%20visited%20your%20portfolio%20and%20would%20love%20to%20chat%20about%20a%20project." 
             target="_blank"
             rel="noopener noreferrer"
-            className="md:hidden inline-flex items-center rounded-full bg-emerald-600 px-3.5 py-1 text-xs font-semibold text-white hover:bg-emerald-500 transition-colors duration-300"
+            className="md:hidden inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-md active:scale-95 hover:bg-emerald-500 transition-all duration-200"
           >
             Let's Talk 💬
           </a>
