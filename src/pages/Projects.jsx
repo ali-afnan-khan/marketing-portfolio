@@ -408,14 +408,14 @@ export default function Projects() {
                 </p>
               </div>
 
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 w-full sm:w-auto text-center">
                 <Link
-                  to="/about"
-                  className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3.5 text-sm font-semibold text-white shadow-xl shadow-indigo-500/25 hover:bg-indigo-500 transition-colors whitespace-nowrap"
+                  to="/request-audit" // Fixed conversion funnel destination route
+                  className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-emerald-600 px-8 py-3.5 text-sm font-bold text-white shadow-xl shadow-emerald-600/20 hover:bg-emerald-500 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
                 >
                   Request the Audit →
                 </Link>
-                <p className="mt-3 text-center text-xs text-slate-600">
+                <p className="mt-3 text-center text-xs text-slate-500 font-medium">
                   No pitch. No retainer push. Just signal.
                 </p>
               </div>

@@ -73,7 +73,7 @@ export default function Navbar() {
       </header>
 
       {/* --- MOBILE FIXED BOTTOM TAB BAR --- */}
-      <div className="md:hidden fixed bottom-0 inset-x-0 z-50 border-t border-white/5 bg-[#0A0A0F]/90 backdrop-blur-lg safe-bottom">
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-50 border-t border-white/20 bg-[#0A0A0F]/98 backdrop-blur-2xl shadow-[0_-8px_30px_rgb(0,0,0,0.8)] pb-[calc(env(safe-area-inset-bottom)+4px)]">
         <nav className="flex justify-around items-center h-14 max-w-md mx-auto px-4">
           {NAV_LINKS.map(({ to, label }) => (
             <NavLink key={to} to={to} end={to === "/"} className={mobileTabLinkClass}>

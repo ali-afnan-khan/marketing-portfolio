@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const METRICS = [
   { value: "3+", label: "Years Scaling Budgets" },
-  { value: "$18,000+", label: "Ad Spend Managed" },
   { value: "7.5×", label: "Average Funnel ROAS" },
 ];
 
@@ -106,7 +105,7 @@ export default function Home() {
           </div>
 
           {/* ── METRICS BANNER ─────────────────────────── */}
-          <div className="mt-16 grid grid-cols-3 gap-px rounded-2xl overflow-hidden border border-white/5 bg-white/5 max-w-3xl mx-auto">
+          <div className="mt-16 grid grid-cols-2 gap-px rounded-2xl overflow-hidden border border-white/5 bg-white/5 max-w-3xl mx-auto">
             {METRICS.map(({ value, label }, i) => (
               <div
                 key={i}
@@ -124,7 +123,7 @@ export default function Home() {
         </div>
 
         {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-600 text-xs tracking-widest">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-slate-600 text-xs tracking-widest">
           <span>SCROLL</span>
           <span className="block h-6 w-px bg-gradient-to-b from-slate-600 to-transparent" />
         </div>

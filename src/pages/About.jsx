@@ -13,8 +13,8 @@ export default function About() {
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-emerald-600/5 rounded-full blur-[120px] pointer-events-none" />
 
-        {/* Tightened layout padding from py-20 lg:py-32 to py-12 lg:py-16 */}
-        <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16 relative z-10">
+        {/* Isolated top padding from pb elements to clear the fixed top navigation bar layout safely */}
+        <div className="max-w-7xl mx-auto px-6 pt-28 pb-12 lg:pt-36 lg:pb-16 relative z-10">
           
           {/* ================================================================= */}
           {/* 1. HERO ARCHITECTURE & PERSONAL VISUAL                           */}
@@ -104,10 +104,10 @@ export default function About() {
             <div className="lg:col-span-8 space-y-6 text-base sm:text-lg text-slate-300 font-normal max-w-3xl leading-relaxed">
               <p>
                 I don’t look at advertising as a creative playground; I treat it as a 
-                <strong className="text-white font-semibold"> capital deployment engine</strong>. I approach marketing with an intense technical focus, handling everything from architectural design down to the minute tracking configurations.
+                <strong className="text-white font-semibold"> capital deployment engine</strong>. I approach marketing as a holistic ecosystem strategist, engineering tailored, high-intent paid campaigns and optimized funnels that consistently maximize customer acquisition and conversion rates.
               </p>
               <p>
-                My work sits squarely at the intersection of heavy infrastructure engineering and conversion rate optimization. Whether I'm plugging margin leaks from inefficient campaign setups or configuring advanced server-side data collection tracking pipelines, my objective is always a predictable, <strong className="text-emerald-400 font-semibold">highly-profitable acquisition model</strong>.
+                My work sits squarely at the intersection of revenue-driven growth strategy and collaborative team leadership. Whether I'm architecting scalable marketing systems, optimizing backend funnels to boost closing margins, or resolving advanced data tracking leaks, my objective is always a predictable, <strong className="text-emerald-400 font-semibold">highly-profitable acquisition model</strong>.
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function About() {
                   <span>01 / 📊 Tracking & Data Infrastructure</span>
                 </div>
                 <p className="text-slate-300 text-sm sm:text-base font-normal leading-relaxed">
-                  Eliminating attribution gaps via **GTM**, **GA4**, **Meta Pixel**, and **Conversions API (CAPI)** to back every dollar with precise data.
+                  Eliminating attribution gaps via <strong className="text-white font-semibold">GTM</strong>, <strong className="text-white font-semibold">GA4</strong>, <strong className="text-white font-semibold">Meta Pixel</strong>, and <strong className="text-white font-semibold">Conversions API (CAPI)</strong> to back every dollar with precise data.
                 </p>
               </div>
               <div className="w-full h-px bg-gradient-to-r from-indigo-500/0 via-indigo-500/20 to-indigo-500/0 mt-6 group-hover:via-indigo-500/50 transition-all duration-500" />
@@ -150,12 +150,12 @@ export default function About() {
                   <span>02 / 🚀 Multi-Channel High Converting Campaigns</span>
                 </div>
                 <p className="text-slate-300 text-sm sm:text-base font-normal leading-relaxed">
-                  Engineering aggressive market acquisition by deploying synchronized paid search (**Google Ads**) and hyper-targeted audience funnels (**Meta Ads**) designed for raw revenue generation.
+                  Engineering aggressive market acquisition by deploying synchronized paid search <strong className="text-white font-semibold">Google Ads</strong> and hyper-targeted audience funnels <strong className="text-white font-semibold">Meta Ads</strong> designed for raw revenue generation.
                 </p>
               </div>
               <div className="w-full h-px bg-gradient-to-r from-indigo-500/0 via-indigo-500/20 to-indigo-500/0 mt-6 group-hover:via-indigo-500/50 transition-all duration-500" />
             </div>
-
+  
             {/* Card 3 */}
             <div className="bg-[#131322]/40 border border-slate-800 hover:border-emerald-500/20 rounded-xl p-6 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
               <div>
@@ -163,7 +163,7 @@ export default function About() {
                   <span>03 / 🛡️ Friction-less Ecosystem</span>
                 </div>
                 <p className="text-slate-300 text-sm sm:text-base font-normal leading-relaxed">
-                  Providing elite **Conversion Rate Optimization (CRO)** and landing page guidance to dismantle funnel leaks, maximize user intent, and squeeze peak profits out of your incoming traffic.
+                  Providing elite <strong className="text-white font-semibold">Conversion Rate Optimization (CRO)</strong> and landing page guidance to dismantle funnel leaks, maximize user intent, and squeeze peak profits out of your incoming traffic.
                 </p>
               </div>
               <div className="w-full h-px bg-gradient-to-r from-emerald-500/0 via-emerald-500/20 to-emerald-500/0 mt-6 group-hover:via-emerald-500/50 transition-all duration-500" />
