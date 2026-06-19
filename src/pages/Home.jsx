@@ -16,9 +16,10 @@ const PILLARS = [
     title: "Strategic Paid Media Buying",
     subtitle: "High-Intent SEM & Converting Paid Social",
     description:
-      "I don’t rely on platform luck or generic templates. I engineer data-backed, multi-channel ad campaigns across Google Ads (SEM) and Meta Ads (SMM) built specifically to capture high-intent audiences and systematically convert passive scrollers into high-value buyers.",
-    accent: "from-indigo-500 to-blue-500",
-    glow: "group-hover:shadow-indigo-500/10",
+      "I don't rely on platform luck or generic templates. I engineer data-backed, multi-channel ad campaigns across Google Ads (SEM) and Meta Ads (SMM) built specifically to capture high-intent audiences and systematically convert passive scrollers into high-value buyers.",
+    accentText: "text-clay",
+    accentBg: "bg-clay-tint",
+    accentLine: "bg-clay",
   },
   {
     icon: (
@@ -31,8 +32,9 @@ const PILLARS = [
     subtitle: "High-converting copy & visual assets",
     description:
       "Clicks are earned at the creative layer. I help design ad copy and visuals around cognitive triggers — urgency, social proof, identity alignment — that move audiences from passive scrollers to active buyers.",
-    accent: "from-violet-500 to-purple-500",
-    glow: "group-hover:shadow-violet-500/10",
+    accentText: "text-sage",
+    accentBg: "bg-sage/10",
+    accentLine: "bg-sage",
   },
   {
     icon: (
@@ -44,77 +46,78 @@ const PILLARS = [
     subtitle: "Ecosystem Engineering & Friction Reduction",
     description:
       "Traffic is useless if your landing page leaks money. I audit your entire conversion ecosystem, providing high-level strategic direction and directing minute technical tweaks that eliminate funnel friction, boost conversion rates, and maximize average order value.",
-    accent: "from-sky-500 to-indigo-500",
-    glow: "group-hover:shadow-sky-500/10",
+    accentText: "text-gold",
+    accentBg: "bg-gold/10",
+    accentLine: "bg-gold",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-paper">
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="relative flex flex-col items-center justify-center min-h-screen px-6 pt-24 overflow-hidden">
 
-        {/* Ambient glow */}
+        {/* Soft warm wash (replaces neon glow) */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[450px] rounded-full bg-indigo-600/20 blur-[130px]" />
-          <div className="absolute top-1/2 -right-20 w-[300px] h-[300px] rounded-full bg-violet-600/10 blur-[100px]" />
+          <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[760px] h-[460px] rounded-full bg-clay/5 blur-[140px]" />
+          <div className="absolute bottom-10 -right-24 w-[320px] h-[320px] rounded-full bg-sage/5 blur-[120px]" />
         </div>
 
         <div className="relative z-10 max-w-4xl w-full text-center mx-auto">
 
           {/* Eyebrow badge */}
-          <div className="mb-6 flex justify-center">
-            <p className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-medium tracking-widest text-indigo-400 uppercase">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-indigo-400 animate-pulse" />
+          <div className="mb-7 flex justify-center">
+            <p className="inline-flex items-center gap-2 rounded-full border border-line bg-card px-4 py-1.5 text-[11px] font-medium tracking-[0.18em] text-taupe uppercase">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-clay animate-pulse" />
               Performance Marketing Expert · Paid Advertising Specialist
             </p>
           </div>
 
           {/* Display heading */}
-          <h1 className="font-['Syne'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-[#F0EEE9]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.08] tracking-tight text-ink">
             I Don't Buy Traffic.{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-violet-400 to-indigo-400">
+            <span className="italic font-medium text-clay">
               I Engineer Profitable
             </span>{" "}
             Acquisition engines.
           </h1>
 
           {/* Sub-hook */}
-          <p className="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            While standard marketing just burn budgets chasing empty clicks and dashboard vanity metrics. 
+          <p className="mt-7 text-lg text-ink-soft max-w-2xl mx-auto leading-relaxed">
+            While standard marketing just burn budgets chasing empty clicks and dashboard vanity metrics.
             I Don't. As a technical marketer, I combine high-level strategy with deep infrastructure execution
             —to turn every dollar of ad spend into profitable, predictable revenue.{" "}
-            <span className="text-slate-200 font-medium">verifiable bottom-line revenue.</span>
+            <span className="text-ink font-medium">verifiable bottom-line revenue.</span>
           </p>
 
           {/* CTA row */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               to="/projects"
-              className="w-full sm:w-auto rounded-full bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 hover:bg-indigo-500 transition-all duration-300 hover:-translate-y-0.5"
+              className="w-full sm:w-auto rounded-full bg-clay px-8 py-3 text-sm font-semibold tracking-wide text-white shadow-sm hover:bg-clay-deep transition-all duration-200 hover:-translate-y-0.5"
             >
               View Case Studies →
             </Link>
             <Link
               to="/about"
-              className="w-full sm:w-auto rounded-full border border-white/10 bg-white/5 px-8 py-3 text-sm font-semibold text-slate-200 hover:bg-white/10 transition-all duration-300 hover:-translate-y-0.5"
+              className="w-full sm:w-auto rounded-full border border-line-strong bg-card px-8 py-3 text-sm font-semibold tracking-wide text-ink hover:border-clay hover:text-clay transition-all duration-200 hover:-translate-y-0.5"
             >
               My Approach
             </Link>
           </div>
 
           {/* ── METRICS BANNER ─────────────────────────── */}
-          <div className="mt-16 grid grid-cols-2 gap-px rounded-2xl overflow-hidden border border-white/5 bg-white/5 max-w-3xl mx-auto">
+          <div className="mt-16 grid grid-cols-2 gap-px rounded-xl overflow-hidden border border-line bg-line max-w-3xl mx-auto">
             {METRICS.map(({ value, label }, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center gap-1 bg-[#0A0A0F]/90 px-4 py-5 sm:py-6 hover:bg-[#1E1E2E]/40 transition-colors duration-200"
+                className="flex flex-col items-center gap-1.5 bg-card px-4 py-6 hover:bg-paper-2 transition-colors duration-200"
               >
-                <span className="font-['Syne'] text-xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-300 to-violet-300">
+                <span className="font-display text-2xl sm:text-4xl font-semibold text-clay">
                   {value}
                 </span>
-                <span className="text-[10px] sm:text-xs text-slate-500 tracking-wide text-center leading-tight">
+                <span className="text-[11px] uppercase tracking-[0.12em] text-taupe text-center leading-tight">
                   {label}
                 </span>
               </div>
@@ -123,23 +126,23 @@ export default function Home() {
         </div>
 
         {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-slate-600 text-xs tracking-widest">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-taupe text-[11px] tracking-[0.3em]">
           <span>SCROLL</span>
-          <span className="block h-6 w-px bg-gradient-to-b from-slate-600 to-transparent" />
+          <span className="block h-6 w-px bg-gradient-to-b from-line-strong to-transparent" />
         </div>
       </section>
 
       {/* ── VALUE PROPOSITION PILLARS ─────────────────── */}
-      <section className="px-6 pb-28 max-w-7xl mx-auto">
-        <div className="max-w-6xl mx-auto">
+      <section className="px-6 pb-28 pt-4 max-w-7xl mx-auto border-t border-line">
+        <div className="max-w-6xl mx-auto pt-20">
 
           {/* Section label */}
           <div className="text-center mb-16">
-            <p className="text-xs font-medium tracking-widest text-indigo-400 uppercase mb-3">
+            <p className="text-[11px] font-medium tracking-[0.2em] text-clay uppercase mb-4">
               The Framework
             </p>
-            <h2 className="font-['Syne'] text-3xl sm:text-4xl font-bold text-[#F0EEE9]">
-              Three pillars. One outcome: Growth.
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-ink tracking-tight">
+              Three pillars. One outcome: <span className="italic text-clay">Growth.</span>
             </h2>
           </div>
 
@@ -148,30 +151,28 @@ export default function Home() {
             {PILLARS.map((pillar, i) => (
               <article
                 key={i}
-                className={`group relative rounded-2xl bg-slate-950/40 border border-slate-900 p-7 hover:border-indigo-500/20 transition-all duration-300 overflow-hidden ${pillar.glow}`}
+                className="group relative rounded-2xl bg-card border border-line p-7 hover:border-line-strong hover:shadow-[0_12px_40px_-12px_rgba(33,28,22,0.18)] transition-all duration-300 overflow-hidden"
               >
-                {/* Top gradient accent line */}
+                {/* Top accent line */}
                 <div
-                  className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${pillar.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+                  className={`absolute inset-x-0 top-0 h-[3px] ${pillar.accentLine} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
                 />
 
                 {/* Icon */}
-                <div className={`mb-5 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br ${pillar.accent} p-0.5`}>
-                  <div className="w-full h-full rounded-[10px] bg-[#0A0A0F] flex items-center justify-center text-indigo-300">
-                    {pillar.icon}
-                  </div>
+                <div className={`mb-5 inline-flex items-center justify-center w-12 h-12 rounded-xl ${pillar.accentBg} ${pillar.accentText}`}>
+                  {pillar.icon}
                 </div>
 
                 {/* Title + subtitle */}
-                <h3 className="font-['Syne'] text-lg font-semibold text-white mb-1">
+                <h3 className="font-display text-xl font-semibold text-ink mb-1.5 leading-snug">
                   {pillar.title}
                 </h3>
-                <p className={`text-xs font-medium tracking-wide bg-gradient-to-r ${pillar.accent} bg-clip-text text-transparent mb-4`}>
+                <p className={`text-[11px] font-semibold uppercase tracking-[0.12em] ${pillar.accentText} mb-4`}>
                   {pillar.subtitle}
                 </p>
 
                 {/* Description */}
-                <p className="text-sm text-slate-400 leading-relaxed">
+                <p className="text-sm text-ink-soft leading-relaxed">
                   {pillar.description}
                 </p>
               </article>

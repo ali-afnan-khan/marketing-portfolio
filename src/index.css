@@ -1,10 +1,47 @@
 /* 1. Import Tailwind v4 */
 @import "tailwindcss";
 
-/* 2. Custom global variables and styles (100% native CSS) */
+/* 2. Warm Editorial design system — registered as Tailwind v4 theme tokens.
+      These generate utilities like bg-paper, text-ink, text-clay, font-display, etc. */
+@theme {
+  /* Type */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+
+  /* Surfaces */
+  --color-paper: #f6f1e7;        /* warm ivory page background */
+  --color-paper-2: #efe8d9;      /* slightly deeper ivory for banding */
+  --color-card: #fcf9f2;         /* raised card / panel */
+
+  /* Ink */
+  --color-ink: #211c16;          /* headings / primary text */
+  --color-ink-soft: #4f463b;     /* body copy */
+  --color-taupe: #897c69;        /* muted labels / captions */
+
+  /* Lines */
+  --color-line: #e4dbc9;         /* hairline borders */
+  --color-line-strong: #d6cab2;
+
+  /* Primary accent — terracotta clay */
+  --color-clay: #b4502e;
+  --color-clay-deep: #97401f;
+  --color-clay-tint: #efe0d6;    /* soft accent wash */
+
+  /* Secondary accent — muted sage */
+  --color-sage: #5e7355;
+  --color-sage-deep: #4a5c43;
+
+  /* Tertiary accent — antique gold (used sparingly) */
+  --color-gold: #b8862b;
+  --color-gold-deep: #8a5f1e;
+
+  /* Editorial brick — "before"/caution states */
+  --color-brick: #a8503c;
+}
+
+/* 3. Global base */
 :root {
-  --background-custom: #0A0A0F;
-  --text-custom: #F0EEE9;
+  color-scheme: light;
 }
 
 html {
@@ -12,9 +49,31 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--background-custom);
-  color: var(--text-custom);
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink-soft);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern", "liga", "calt";
+}
+
+/* Fraunces looks best with a touch of optical sizing on large display text */
+.font-display {
+  font-optical-sizing: auto;
+}
+
+/* 4. Soft fade for modals (referenced by animate-fadeIn) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.22s ease-out;
 }

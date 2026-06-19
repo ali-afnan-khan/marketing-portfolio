@@ -27,8 +27,8 @@ const CASE_STUDIES = [
     category: "Tour Package Sales · Google & Meta Ads",
     title: "Direct Acquisition Engine for Tour Operator",
     subtitle: "Recovered $60K/yr in middleman commissions by driving direct bookings",
-    accent: "from-violet-500 to-purple-500",
-    accentSolid: "bg-violet-500",
+    accent: "from-clay to-gold",
+    accentSolid: "bg-clay",
     metrics: [
       { value: "3.66×", label: "True ROAS (Google)" },
       { value: "~ $40K", label: "Total Blended Revenue (6 months)" },
@@ -62,8 +62,8 @@ const CASE_STUDIES = [
     category: "E-Commerce · Meta Ads",
     title: "Private Label Apparel Brand",
     subtitle: "From breaking even to 7.5× ROAS in 60 days",
-    accent: "from-indigo-500 to-blue-500",
-    accentSolid: "bg-indigo-500",
+    accent: "from-sage to-sage-deep",
+    accentSolid: "bg-sage",
     metrics: [
       { value: "7.5×", label: "ROAS" },
       { value: "PKR 2M+", label: "Revenue Generated" },
@@ -95,8 +95,8 @@ const CASE_STUDIES = [
     category: "Event Marketing · Meta Ads",
     title: "Orchestra Concert Ticket Sales",
     subtitle: "15.7× ROAS — cleared all inventory at 70% under planned budget",
-    accent: "from-sky-500 to-indigo-500",
-    accentSolid: "bg-sky-500",
+    accent: "from-gold to-clay",
+    accentSolid: "bg-gold",
     metrics: [
       { value: "15.7×", label: "ROAS" },
       { value: "$232", label: "Actual Ad Spend" },
@@ -128,11 +128,11 @@ const CASE_STUDIES = [
 
 function MetricPill({ value, label, accent }) {
   return (
-    <div className="flex flex-col items-center gap-0.5 px-5 py-4 rounded-xl bg-white/[0.04] border border-white/5">
-      <span className={`font-display text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br ${accent}`}>
+    <div className="flex flex-col items-center gap-0.5 px-5 py-4 rounded-xl bg-paper border border-line">
+      <span className={`font-display text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-br ${accent}`}>
         {value}
       </span>
-      <span className="text-xs text-slate-500 tracking-wide text-center">{label}</span>
+      <span className="text-xs text-taupe tracking-wide text-center">{label}</span>
     </div>
   );
 }
@@ -151,18 +151,18 @@ function ImageGrid({ config }) {
               <button
                 key={img.label}
                 onClick={() => setLightbox(img)}
-                className="group relative rounded-lg overflow-hidden border border-white/5 hover:border-indigo-500/30 transition-colors cursor-zoom-in"
+                className="group relative rounded-lg overflow-hidden border border-line hover:border-clay/50 transition-colors cursor-zoom-in"
               >
                 <img
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-36 object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/90 via-transparent to-transparent" />
-                <span className={`absolute top-2 left-2 rounded-full px-2 py-0.5 text-[10px] font-semibold tracking-wide ${img.tag === "Before" ? "bg-red-500/80 text-white" : "bg-emerald-500/80 text-white"}`}>
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent" />
+                <span className={`absolute top-2 left-2 rounded-full px-2 py-0.5 text-[10px] font-semibold tracking-wide text-white ${img.tag === "Before" ? "bg-brick" : "bg-sage"}`}>
                   {img.tag}
                 </span>
-                <span className="absolute bottom-2 left-2 text-xs text-slate-300 font-medium">{img.label}</span>
+                <span className="absolute bottom-2 left-2 text-xs text-white font-medium">{img.label}</span>
               </button>
             ))}
           </div>
@@ -172,15 +172,15 @@ function ImageGrid({ config }) {
               <button
                 key={img.label}
                 onClick={() => setLightbox(img)}
-                className="group relative rounded-lg overflow-hidden border border-white/5 hover:border-indigo-500/30 transition-colors cursor-zoom-in"
+                className="group relative rounded-lg overflow-hidden border border-line hover:border-clay/50 transition-colors cursor-zoom-in"
               >
                 <img
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-36 object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/90 via-transparent to-transparent" />
-                <span className="absolute bottom-2 left-2 text-xs text-slate-300 font-medium">{img.label}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-xs text-white font-medium">{img.label}</span>
               </button>
             ))}
           </div>
@@ -201,7 +201,7 @@ function ImageGrid({ config }) {
           <button
             key={img.label}
             onClick={() => setLightbox(img)}
-            className="group relative rounded-lg overflow-hidden border border-white/5 bg-[#0A0A0F] h-40 w-full text-left cursor-zoom-in"
+            className="group relative rounded-lg overflow-hidden border border-line hover:border-clay/50 transition-colors bg-ink h-40 w-full text-left cursor-zoom-in"
           >
             {img.isVideo ? (
               <div className="w-full h-full flex items-center justify-center overflow-hidden">
@@ -219,8 +219,8 @@ function ImageGrid({ config }) {
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
               />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/90 via-transparent to-transparent pointer-events-none" />
-            <span className="absolute bottom-2 left-2 text-xs text-slate-300 font-medium pointer-events-none">
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent pointer-events-none" />
+            <span className="absolute bottom-2 left-2 text-xs text-white font-medium pointer-events-none">
               {img.label}
             </span>
           </button>
@@ -258,10 +258,10 @@ function Lightbox({ img, onClose }) {
             className="w-full rounded-xl border border-white/10 shadow-2xl"
           />
         )}
-        <p className="mt-3 text-center text-sm text-slate-400 w-full">{img.label}</p>
+        <p className="mt-3 text-center text-sm text-paper/80 w-full">{img.label}</p>
         <button
           onClick={onClose}
-          className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-800 border border-white/10 text-slate-300 hover:text-white flex items-center justify-center text-lg leading-none z-[110]"
+          className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-card border border-line text-ink hover:text-clay flex items-center justify-center text-lg leading-none z-[110]"
           aria-label="Close"
         >
           ×
@@ -273,8 +273,8 @@ function Lightbox({ img, onClose }) {
 
 function ObstacleItem({ text }) {
   return (
-    <li className="flex items-start gap-2.5 text-sm text-slate-400 leading-relaxed">
-      <span className="mt-1.5 flex-shrink-0 w-1 h-1 rounded-full bg-red-400/70" />
+    <li className="flex items-start gap-2.5 text-sm text-taupe leading-relaxed">
+      <span className="mt-1.5 flex-shrink-0 w-1 h-1 rounded-full bg-brick" />
       {text}
     </li>
   );
@@ -287,19 +287,19 @@ export default function Projects() {
 
   return (
     <>
-    <div className="min-h-screen bg-[#0D0D18]">
+    <div className="min-h-screen bg-paper">
 
       {/* ── Page Header ───────────────────────────────── */}
       <section className="relative px-6 pt-28 pb-16 overflow-hidden">
-        <div aria-hidden className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-indigo-600/15 blur-[100px]" />
+        <div aria-hidden className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-clay/5 blur-[120px]" />
         <div className="relative max-w-5xl mx-auto">
-          <p className="text-xs font-medium tracking-widest text-indigo-400 uppercase mb-3">
+          <p className="text-xs font-medium tracking-[0.2em] text-clay uppercase mb-3">
             Verified results
           </p>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-[#F0EEE9] mb-4">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-ink tracking-tight mb-4">
             Case Studies
           </h1>
-          <p className="text-slate-400 max-w-xl leading-relaxed">
+          <p className="text-ink-soft text-lg max-w-xl leading-relaxed">
             Three engagements. Every metric below is CRM-verified or platform-audited —
             no inflated attribution, no blended vanity numbers.
           </p>
@@ -312,10 +312,10 @@ export default function Projects() {
           {CASE_STUDIES.map((cs) => (
             <article
               key={cs.id}
-              className="group relative rounded-2xl bg-[#1A1A2E] border border-white/5 hover:border-indigo-500/20 transition-colors duration-500 overflow-hidden"
+              className="group relative rounded-2xl bg-card border border-line hover:border-line-strong hover:shadow-[0_18px_50px_-20px_rgba(33,28,22,0.25)] transition-all duration-500 overflow-hidden"
             >
               {/* Top accent line */}
-              <div className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${cs.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+              <div className={`absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r ${cs.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
 
               <div className="p-7 sm:p-9">
 
@@ -323,15 +323,15 @@ export default function Projects() {
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-8">
                   <div>
                     <div className="flex items-center gap-3 mb-2">
-                      <span className={`font-display text-xs font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r ${cs.accent}`}>
+                      <span className={`font-display text-sm font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r ${cs.accent}`}>
                         {cs.index}
                       </span>
-                      <span className="text-xs text-slate-500 tracking-wide uppercase">{cs.category}</span>
+                      <span className="text-xs text-taupe tracking-[0.12em] uppercase">{cs.category}</span>
                     </div>
-                    <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#F0EEE9] leading-tight">
+                    <h2 className="font-display text-2xl sm:text-3xl font-semibold text-ink leading-tight tracking-tight">
                       {cs.title}
                     </h2>
-                    <p className="mt-1.5 text-sm text-slate-400">{cs.subtitle}</p>
+                    <p className="mt-1.5 text-sm text-ink-soft">{cs.subtitle}</p>
                   </div>
                 </div>
 
@@ -350,11 +350,11 @@ export default function Projects() {
 
                     {/* Block 1: The Brief & Obstacle */}
                     <div>
-                      <h3 className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">
+                      <h3 className="flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-taupe uppercase mb-4">
                         <span className={`inline-block w-4 h-px bg-gradient-to-r ${cs.accent}`} />
                         The Brief & Obstacle
                       </h3>
-                      <p className="text-sm text-slate-300 leading-relaxed mb-4">{cs.brief.context}</p>
+                      <p className="text-sm text-ink-soft leading-relaxed mb-4">{cs.brief.context}</p>
                       <ul className="space-y-2">
                         {cs.brief.obstacles.map((o) => <ObstacleItem key={o} text={o} />)}
                       </ul>
@@ -362,21 +362,21 @@ export default function Projects() {
 
                     {/* Block 2: The Framework Strategy */}
                     <div>
-                      <h3 className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">
+                      <h3 className="flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-taupe uppercase mb-4">
                         <span className={`inline-block w-4 h-px bg-gradient-to-r ${cs.accent}`} />
                         The Framework Strategy
                       </h3>
-                      <p className="text-sm text-slate-300 leading-relaxed">{cs.framework}</p>
+                      <p className="text-sm text-ink-soft leading-relaxed">{cs.framework}</p>
                     </div>
                   </div>
                   {/* Right: Image evidence panel */}
                   <div className="lg:col-span-2">
-                    <h3 className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">
+                    <h3 className="flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-taupe uppercase mb-4">
                       <span className={`inline-block w-4 h-px bg-gradient-to-r ${cs.accent}`} />
                       Evidence
                     </h3>
                     <ImageGrid config={cs.images} />
-                    <p className="mt-2.5 text-[11px] text-slate-600 text-center">
+                    <p className="mt-2.5 text-[11px] text-taupe text-center">
                       Click any image to expand
                     </p>
                   </div>
@@ -391,23 +391,23 @@ export default function Projects() {
       {/* ── CTA: Audit Banner ─────────────────────────── */}
       <section className="px-6 pb-24">
         <div className="max-w-5xl mx-auto">
-          <div className="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-[#131322] to-[#0D0D18] p-6 md:p-10 pb-10 md:pb-12 overflow-hidden">
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+          <div className="relative rounded-2xl border border-ink bg-ink p-6 md:p-10 pb-10 md:pb-12 overflow-hidden">
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0d_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0d_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
             <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
               {/* 1. Header & Description Typography Stack */}
               <div className="space-y-4">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Syne',sans-serif] text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-display text-paper tracking-tight">
                   Request an Acquisition & Attribution Audit
                 </h2>
-                <p className="text-slate-300 text-base sm:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
+                <p className="text-paper/70 text-base sm:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
                   Let's stress-test your tracking configurations, uncover ad-spend leaks, and structure a repeatable growth framework.
                 </p>
               </div>
               {/* 2. Centered Audit Button (Moved Above the Bullets) */}
               <div className="flex justify-center items-center pt-2">
-                <button 
+                <button
                   onClick={() => setIsAuditModalOpen(true)}
-                  className="inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-white hover:bg-slate-200 text-[#0D0D18] font-bold rounded-lg transition-all duration-300 shadow-lg shadow-white/5 tracking-wide hover:-translate-y-0.5 text-sm mx-auto"
+                  className="inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-clay hover:bg-clay-deep text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-clay/20 tracking-wide hover:-translate-y-0.5 text-sm mx-auto"
                 >
                   Secure Your Audit Slot
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -417,17 +417,17 @@ export default function Projects() {
               </div>
               {/* 3. Framework Highlights Grid (Moved Below the Button) */}
               <div className="pt-2 max-w-xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left border-y border-slate-800/80 py-4">
-                  <div className="flex items-center gap-2 text-xs text-slate-200 font-medium">
-                    <svg className="w-4 h-4 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left border-y border-paper/15 py-4">
+                  <div className="flex items-center gap-2 text-xs text-paper/90 font-medium">
+                    <svg className="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
                     Full funnel teardown
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-slate-200 font-medium">
-                    <svg className="w-4 h-4 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
+                  <div className="flex items-center gap-2 text-xs text-paper/90 font-medium">
+                    <svg className="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
                     Zero sales pitch
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-emerald-400 font-medium">
-                    <svg className="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
+                  <div className="flex items-center gap-2 text-xs text-[#9DB089] font-medium">
+                    <svg className="w-4 h-4 text-[#9DB089] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
                     Actionable items
                   </div>
                 </div>
@@ -443,13 +443,13 @@ export default function Projects() {
     {/* AUDIT DIALOG POPUP MODAL                                       */}
     {/* ============================================================= */}
     {isAuditModalOpen && (
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fadeIn">
-        <div className="relative w-full max-w-md p-6 rounded-xl border border-slate-800 bg-[#0D0D18] text-center shadow-2xl space-y-4">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/60 backdrop-blur-sm animate-fadeIn">
+        <div className="relative w-full max-w-md p-6 rounded-xl border border-line bg-card text-center shadow-2xl space-y-4">
 
           {/* Close Button */}
           <button
             onClick={() => setIsAuditModalOpen(false)}
-            className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
+            className="absolute top-4 right-4 text-taupe hover:text-ink transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
@@ -458,8 +458,8 @@ export default function Projects() {
 
           {/* Modal Header */}
           <div className="space-y-1">
-            <h3 className="text-lg font-bold text-white font-['Syne',sans-serif]">Choose Your Preferred Channel</h3>
-            <p className="text-slate-300 text-sm font-normal">How would you like to submit your audit request?</p>
+            <h3 className="text-lg font-semibold text-ink font-display">Choose Your Preferred Channel</h3>
+            <p className="text-ink-soft text-sm font-normal">How would you like to submit your audit request?</p>
           </div>
 
           {/* Channel Buttons */}
@@ -479,9 +479,9 @@ export default function Projects() {
                   });
                 }
               }}
-              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-slate-700 bg-slate-800/40 text-white font-semibold hover:bg-slate-800 transition-colors text-sm"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-line bg-paper text-ink font-semibold hover:bg-paper-2 transition-colors text-sm"
             >
-              <svg className="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-clay" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
               Via Email
@@ -501,7 +501,7 @@ export default function Projects() {
                   });
                 }
               }}
-              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-colors text-sm"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-sage hover:bg-sage-deep text-white font-semibold transition-colors text-sm"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.411 0 11.989 0c3.183.001 6.177 1.239 8.43 3.494 2.254 2.255 3.49 5.251 3.488 8.436-.005 6.581-5.356 11.932-11.934 11.932-2.004-.001-3.973-.505-5.717-1.464L0 24zm6.59-4.846c1.6.95 3.197 1.451 4.794 1.453 5.373 0 9.743-4.373 9.746-9.748.002-2.602-1.01-5.05-2.85-6.892C16.436 2.125 13.99 1.113 11.1 1.111c-5.376 0-9.748 4.372-9.751 9.75-.001 1.765.467 3.491 1.357 5.021l-.995 3.637 3.72-.975zm13.102-7.5c-.174-.088-1.03-.508-1.19-.566-.16-.058-.276-.088-.393.088-.117.176-.45.566-.552.684-.102.118-.204.133-.378.045-.174-.088-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.21-.102-.176-.011-.272.077-.359.08-.078.174-.204.262-.306.088-.102.117-.176.175-.293.058-.118.029-.22-.014-.309-.043-.088-.393-.949-.539-1.301-.143-.347-.29-.299-.393-.304l-.335-.006c-.117 0-.306.044-.466.218-.16.176-.611.597-.611 1.454 0 .858.624 1.688.712 1.805.088.117 1.228 1.877 2.976 2.631.416.18.741.287.994.367.419.133.801.114 1.102.069.336-.05 1.03-.42 1.176-.826.146-.405.146-.753.102-.826-.044-.073-.16-.117-.334-.205z"/>
